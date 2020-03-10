@@ -1,0 +1,46 @@
+.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
+    border-color: #adb5bd !important;
+    background-color: transparent !important;
+}
+.sort::before {
+    border-radius: 50% !important;
+}
+
+.filter-section {
+    max-width: 14% !important;
+    width: 14% !important;
+    margin-left: 25px !important;
+    border-right: solid wheat;
+} 
+
+.filterby{
+    display: flex;
+}
+.filter-section h4 {
+    font-weight: 400;
+}
+.donation-range {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    width: 80%;
+}
+.donation-range .input-range__slider {
+    background: #893487;
+    border: 1px solid #893487;
+}
+.donation-range .input-range__track--active {
+    background: #893487;
+}
+.donation-range .input-range__track--background {
+    background: #c7bebe;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .donation-range{
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,36 @@
+.header {
+  overflow: hidden;
+  background-color:#8d4343;
+  padding: 8px 10px;
+}
+
+.header a {
+font-family: 'Arial';
+  float: left;
+  color:#f4f5f8fa;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  padding-right: 40px;
+  font-size: 14px;
+}
+
+.header a:hover {
+  background-color:#db6270;
+  color:#e5e6de;
+}
+
+.header a.active {
+  background-color:(21, 49, 104);
+  color: white;
+}
+
+    
+
+
+.header-right {
+  padding-left: 830px;
+}

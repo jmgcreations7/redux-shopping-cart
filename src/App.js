@@ -1,6 +1,11 @@
 import React from 'react';
 import { createStore } from 'redux';
+import Filter from './Component/Products/Filter/Filter';
+import Product from './Component/Products/Products';
+import { Provider } from 'react-redux';
 import './App.css';
+import ProductList from './Component/Products/ProductList/ProductList';
+import Products from './Component/Products/Products';
 
 
 const initialState = {
@@ -14,8 +19,8 @@ const initialState = {
       rating: 3,
       stockStatus: true,
       stockCount: 20,
-      categoryId: '01',
-      brandId: '001',
+      categoryId: 101,
+      brandId: 1001,
     },
     {
       id: 2,
@@ -26,8 +31,8 @@ const initialState = {
       rating: 4,
       stockStatus: false,
       stockCount: 0,
-      categoryId: '02',
-      brandId: '006',
+      categoryId: 102,
+      brandId: 1006,
     },
     {
       id: 3,
@@ -38,8 +43,8 @@ const initialState = {
       rating: 4,
       stockStatus: true,
       stockCount: 15,
-      categoryId: '03',
-      brandId: '005',
+      categoryId: 103,
+      brandId: 1005,
     },
     {
       id: 4,
@@ -50,8 +55,8 @@ const initialState = {
       rating: 5,
       stockStatus: true,
       stockCount: 10,
-      categoryId: '04',
-      brandId: '006',
+      categoryId: 104,
+      brandId: 1006,
     },
     {
       id: 5,
@@ -62,20 +67,20 @@ const initialState = {
       rating: 5,
       stockStatus: true,
       stockCount: 5,
-      categoryId: '05',
-      brandId: '001',
+      categoryId: 105,
+      brandId: 1001,
     },
     {
       id: 6,
-      name: Watch,
+      name: 'Watch',
       imageurl: '',
       price: 2500,
       offer: 10,
       rating: 4,
       stockStatus: false,
       stockCount: 0,
-      categoryId: '06',
-      brandId: '004',
+      categoryId: 106,
+      brandId: 1004,
     },
     {
       id: 7,
@@ -86,8 +91,8 @@ const initialState = {
       rating: 3,
       stockStatus: true,
       stockCount: 25,
-      categoryId: '07',
-      brandId: '003',
+      categoryId: 107,
+      brandId: 1003,
     },
     {
       id: 8,
@@ -98,8 +103,8 @@ const initialState = {
       rating: 4,
       stockStatus: true,
       stockCount: 7,
-      categoryId: '08',
-      brandId: '004',
+      categoryId: 108,
+      brandId: 1004,
     },
     {
       id: 9,
@@ -110,8 +115,8 @@ const initialState = {
       rating: 5,
       stockStatus: true,
       stockCount: 9,
-      categoryId: '09',
-      brandId: '007',
+      categoryId: 109,
+      brandId: 1007,
     },
     {
       id: 10,
@@ -122,79 +127,79 @@ const initialState = {
       rating: 5,
       stockStatus: false,
       stockCount: 3,
-      categoryId: '10',
-      brandId: '004',
+      categoryId: 110,
+      brandId: 1004,
     }
   ],
   categories:[
     {
-      id: 01,
+      id: 101,
       name: 'Mobile',
     },
     {
-      id: 02,
+      id: 102,
       name: 'Tv',
     },
     {
-      id: 03,
+      id: 103,
       name: 'Laptop',
     },
     {
-      id: 04,
+      id: 104,
       name: 'AC',
     },
     {
-      id: 05,
+      id: 105,
       name: 'Fridge',
     },
     {
-      id: 06,
+      id: 106,
       name: 'Watch',
     },
     {
-      id: 07,
+      id: 107,
       name: 'Headset',
     },
     {
-      id: 08,
+      id: 108,
       name: 'Powerbank',
     },
     {
-      id: 09,
+      id: 109,
       name: 'Baby product',
     },
     {
-      id: 10,
+      id: 110,
       name: 'Camera',
     },
   ],
   brands:[
     {
-      id: '001',
+      id: 1001,
       name: 'Samsung',
     },
     {
-      id: '002',
+      id: 1002,
       name: 'Redmi',
     },
     {
-      id: '003',
+      id: 1003,
       name: 'Boat',
     },
     {
-      id: '004',
+      id: 1004,
       name: 'Mi',
     },
     {
-      id: '005',
+      id: 1005,
       name: 'Toshiba',
     },
     {
-      id: '006',
+      id: 1006,
       name: 'LG',
     },
     {
-      id: '007',
+      id: 1007,
       name: 'Max',
     },
   ]
@@ -211,9 +216,11 @@ const store = createStore(reducer);
 
 const App = () => {
   return (
+    <Provider store={store}>
     <div className="App">
-      
+      <Products/>
     </div>
+    </Provider>
   );
 }
 
