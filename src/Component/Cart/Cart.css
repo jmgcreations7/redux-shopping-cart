@@ -1,0 +1,16 @@
+#carts{
+    background-color: bisque;
+    border:ridge;
+    padding: 20px 20px;
+    /* margin: 50px 250px; */
+}
+#delete{
+    background-color:#8d4343 ;
+    padding: 15px;
+    color: white;
+}
+.datadiv{
+    margin-left:20%;
+    width: 28% !important;
+    display: inline-block;
+}

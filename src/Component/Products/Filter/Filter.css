@@ -11,14 +11,16 @@
     width: 14% !important;
     margin-left: 25px !important;
     border-right: solid wheat;
+    display: inline-block;
 } 
 
 .filterby{
     display: flex;
+    color:#8d4343 ;
 }
-.filter-section h4 {
+/* .filter-section h4 {
     font-weight: 400;
-}
+} */
 .donation-range {
     position: relative;
     display: block;
@@ -26,17 +28,15 @@
     width: 80%;
 }
 .donation-range .input-range__slider {
-    background: #893487;
-    border: 1px solid #893487;
+    background:  #8d4343;
+    border: 1px solid  #8d4343;
 }
 .donation-range .input-range__track--active {
-    background: #893487;
+    background: #8d4343;
 }
 .donation-range .input-range__track--background {
     background: #c7bebe;
 }
-
-
 
 @media only screen and (max-width: 900px) {
 

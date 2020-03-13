@@ -3,13 +3,15 @@ import { connect } from 'react-redux';
 import Card from './Card/Card';
 
 
+import './ProductList.css';
+
 function mapStateToProps(props) {
     console.log("hiiiiiiiiiii",props.productPageIndex);
     
    
     return {
     products: props.products,
-     productPageIndex : props.productPageIndex
+    productPageIndex : props.productPageIndex
     
 
     };
@@ -25,22 +27,20 @@ function mapStateToProps(props) {
         })
   }
   
-  const ProductList = (props,e) => {
+  const ProductList = (props) => {
       let products = props.products;
       let page = 0;
       let showData = products.slice((page*6)+0, (page+1)*6);
-
-      return <Fragment>
-
-        {
-          showData.map((item,index) => {
-              return <Card/>
-              
-          })
-        }
-          <button className="button" onClick = {(e) =>handleClick(props,e)}>Viewmore</button>
-      </Fragment>
-
+      return (
+          <Fragment>
+            {
+                showData.map((item,index) => { 
+                    return <Card item= {item} index= {index} />               
+                })
+            }
+                <button className="button" onClick = {(e) =>handleClick(props,e)}>Viewmore</button>
+          </Fragment>
+      );
         
         
 }

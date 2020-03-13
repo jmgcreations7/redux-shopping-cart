@@ -3,23 +3,21 @@ import ProductList from './ProductList/ProductList';
 import Header from './../SharedComponents/Header/Header';
 import Footer from './../SharedComponents/Footer/Footer';
 import Filter from './Filter/Filter';
- 
+
+import './Products.css'; 
+
 const Products = () =>{
-return(
-    <Fragment>
-    <Header/>
-   <div className="container">
-    <div className="row">
-    <div className="col-xs-6">
-    <Filter/>
-    </div>
-   <div className="col-xs-6 ">
-    <ProductList/>
-   </div>
-    </div>
-   </div>
-    <Footer/>
-    </Fragment>
-);
+    return(
+        <Fragment>
+            <Header/>
+            <div id="productdiv">
+                <Filter/>
+                <div className="productdiv">
+                <ProductList/>
+                </div>
+            </div>
+            <Footer/>
+        </Fragment>
+    );
 }
 export default Products;

@@ -8,20 +8,17 @@ import Card from '../ProductList/Card/Card';
 import ProductList from '../ProductList/ProductList';
 
 function mapStateToProps(state) {
-    console.log("+++++++",state);
-    return {
-    //   count: state.count
-
-    };
+    // console.log("+++++++",state);
+    return {};
   }
 const Filter = (state) => {
-    console.log("=========>",state);
+    // console.log("=========>",state);
 
     return (
-       
         <Fragment>
-            <div className= "col-lg-2 col-md-3 filter-section">
-                <h4 className= "mt-5 mb-4 filterby" >Filter By</h4>
+            <div className= "filter-section">
+                <img src="/assets/images/offer.png" height="200" width="150"/>
+                <h3 className= "filterby" >Filter By</h3>
                 <div id="toggle-filter" className= "filter hide-filter">
                     <div className= "sort-by">
                         <h4 className= "filter-heading">Categories</h4>
@@ -93,33 +90,25 @@ const Filter = (state) => {
                         </div>
                     </div>
 
-                   
                     <div className= "criticality">
                         <h4 className= "filter-heading">User Reviews</h4>
+                        <p>Good Products</p>
                     </div>
 
-                    
                     <div className="donation-range" name="donationAmt">
                         <h4 className="filter-heading">Price Range</h4>
                         <InputRange
                             maxValue={100}
                             minValue={0}
                             name="donationAmt"
-                            // draggableTrack
                         />
                     </div>
                     <div className= "sort-by">
                         <h4 className= "filter-heading">Discount</h4>
-                        
-                            <label className= "custom-control-label" htmlFor= "female">10%</label>
-                        </div>
-                        <div className= "custom-control custom-checkbox">
-                            
-                            <label className= "custom-control-label" htmlFor="other">20%</label>
-                        </div>
+                        <label className= "custom-control-label" htmlFor= "percentage">10% - 20%</label>
                     </div>
-                 
-                </div>
+                 </div>     
+            </div>
         </Fragment>
           
     )

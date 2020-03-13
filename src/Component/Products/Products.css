@@ -1,0 +1,7 @@
+.productdiv{
+    width: 83% !important;
+    display: inline-block !important;
+}
+#productdiv{
+    display: flex;
+}
