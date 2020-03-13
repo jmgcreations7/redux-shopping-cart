@@ -202,7 +202,10 @@ const initialState = {
       id: 1007,
       name: 'Max',
     },
-  ]
+  ],
+  productPageIndex : 1,
+    
+  
 }
 
 function reducer(state = initialState, action) {
