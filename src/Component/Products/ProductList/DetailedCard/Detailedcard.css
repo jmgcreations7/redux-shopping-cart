@@ -1,0 +1,20 @@
+.Detailedcard{
+text-align:center;
+background-color: bisque;
+padding: 20px 20px;
+margin: 50px 250px;
+border:solid#8d4343;
+}
+#addcart{
+    background-color:#8d4343 ;
+    padding: 15px;
+    color: white;
+}
+.offer{
+    color:white;
+    font-weight: bold;
+    font-size:large;
+    position:absolute;
+    background-color:red;
+    padding:8px;
+}
