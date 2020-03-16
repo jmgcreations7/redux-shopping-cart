@@ -15,6 +15,7 @@ const Header = () => {
             <div className="header-right">
                 <a className="active" href={`/`}>Home</a>
                 <a href="#about">About</a>
+                <a href={`/Cart`}>My Cart</a>
                 <a href={"#contact"}>Contact</a>
             </div>
         </div>

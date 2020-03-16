@@ -1,0 +1,30 @@
+.shippingAddr{
+    padding: 50px;
+
+}
+
+#order{
+    color:#8d4343 ;
+}
+.order{
+    padding: 50px;
+    margin-left: 60%;
+    margin-top: -39%;
+}
+#submit{
+    background-color:#8d4343 ;
+    padding: 10px;
+    color: white;
+    margin-left: 25%;
+}
+#addr{
+    margin: 20px;
+    padding: 10px;
+    width: 50%;
+}
+.checkout{
+    padding: 10px 100px;
+    border:ridge;
+    background-color: bisque;
+    
+}

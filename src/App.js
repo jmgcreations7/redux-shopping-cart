@@ -5,6 +5,7 @@ import './App.css';
 import DetailedCard from './Component/Products/ProductList/DetailedCard/DetailedCard';
 import Products from './Component/Products/Products';
 import Carts from './Component/Cart/Cart';
+import Checkout from './Component/Checkout/Checkout';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const initialState = {
@@ -230,8 +231,10 @@ const initialState = {
     {
       id:2, 
       quantity:1
-    }
-]
+    },
+    
+],
+cartTotal:1500,
 }
 
 function reducer(state = initialState, action) {
@@ -250,6 +253,7 @@ const App = () => {
           <Route exact path="/" component={Products} /> 
           <Route exact path="/Cart" component={Carts} /> 
           <Route exact path="/products/:name/:id" component={DetailedCard} />
+          <Route exact path="/Checkout" component={Checkout} />
         </Switch>
       </Router>
     </div>

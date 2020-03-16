@@ -6,6 +6,7 @@ import Filter from './Filter/Filter';
 
 import './Products.css'; 
 
+
 const Products = () =>{
     return(
         <Fragment>

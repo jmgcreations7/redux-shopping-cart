@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Header from '../../SharedComponents/Header/Header';
 import InputRange from 'react-input-range';
 import { connect } from 'react-redux';
+import StarRatings from 'react-star-ratings';
 import 'react-input-range/lib/css/index.css'; 
 import './Filter.css';
 import Card from '../ProductList/Card/Card';
@@ -92,7 +93,15 @@ const Filter = (state) => {
 
                     <div className= "criticality">
                         <h4 className= "filter-heading">User Reviews</h4>
-                        <p>Good Products</p>
+                        <p> 
+                        <StarRatings
+                        rating={4}
+                        starRatedColor="#8d4343"
+                        numberOfStars={5}
+                        name='rating'
+                        starDimension="20px"
+                        />
+                        </p>
                     </div>
 
                     <div className="donation-range" name="donationAmt">
@@ -105,7 +114,9 @@ const Filter = (state) => {
                     </div>
                     <div className= "sort-by">
                         <h4 className= "filter-heading">Discount</h4>
-                        <label className= "custom-control-label" htmlFor= "percentage">10% - 20%</label>
+                        <img src="/assets/images/discount.png" height="150" width="150"/>
+                        <button type="button" id="offer">10%</button>
+                        <button type="button" id="offer">20%</button>
                     </div>
                  </div>     
             </div>

@@ -38,7 +38,7 @@ function mapStateToProps(props) {
                     return <Card item= {item} index= {index} />               
                 })
             }
-                <button className="button" onClick = {(e) =>handleClick(props,e)}>Viewmore</button>
+                <button className="button" onClick = {(e) =>handleClick(props,e)}>View more >>></button>
           </Fragment>
       );
         

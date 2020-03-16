@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import './Cart.css';
 import Footer from '../SharedComponents/Footer/Footer';
 import Header from '../SharedComponents/Header/Header';
+import { Link } from 'react-router-dom';
 
 function mapStateToProps(props) {
     return {
@@ -27,10 +28,9 @@ return <Fragment>
             {
             cartItems.map((cartitem,index) => {
                 return <div className="cart" id="carts">
-                    <img src={cartitem.imageurl} height="200px" width="300px"/>
+                    <img src={cartitem.imageurl} height="100px" width="150px"/>
                     <div className="datadiv">
-                    <img src="/assets/images/offer.png" height="100" width="100"/>
-                    <h4>Product id : {cartitem.id}</h4>
+                    <img src="/assets/images/offer.png" height="70" width="100"/>
                     <h4>Product Name : {cartitem.name}</h4> 
                     <h4>Price : Rs.{cartitem.price-((cartitem.price)*(cartitem.offer))/100}</h4>
                     </div>
@@ -38,6 +38,11 @@ return <Fragment>
                 </div>
                  }) 
             }
+            <div> 
+                <Link to ={`/Checkout`}>
+                <button type="button" id="checkout">Checkout</button>
+                </Link>
+                </div>
             <Footer/>
         </Fragment>
        

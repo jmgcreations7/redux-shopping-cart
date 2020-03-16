@@ -37,7 +37,11 @@
 .donation-range .input-range__track--background {
     background: #c7bebe;
 }
-
+#offer{
+    padding:8px;
+    margin: 5px;
+    font-weight: bolder;
+}
 @media only screen and (max-width: 900px) {
 
     .donation-range{
