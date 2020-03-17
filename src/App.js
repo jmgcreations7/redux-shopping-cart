@@ -7,6 +7,7 @@ import Products from './Component/Products/Products';
 import Carts from './Component/Cart/Cart';
 import Checkout from './Component/Checkout/Checkout';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import WishList from './Component/WishList/WishList';
 
 const initialState = {
   products:[
@@ -235,6 +236,7 @@ const initialState = {
     
 ],
 cartTotal:1500,
+wishlist:[{id:3},{id:4},{id:8,},{id:6}]
 }
 
 function reducer(state = initialState, action) {
@@ -252,6 +254,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Products} /> 
           <Route exact path="/Cart" component={Carts} /> 
+          <Route exact path="/WishList" component={WishList} /> 
           <Route exact path="/products/:name/:id" component={DetailedCard} />
           <Route exact path="/Checkout" component={Checkout} />
         </Switch>

@@ -16,6 +16,7 @@ const Header = () => {
                 <a className="active" href={`/`}>Home</a>
                 <a href="#about">About</a>
                 <a href={`/Cart`}>My Cart</a>
+                <a href={`/WishList`}>WishList</a>
                 <a href={"#contact"}>Contact</a>
             </div>
         </div>

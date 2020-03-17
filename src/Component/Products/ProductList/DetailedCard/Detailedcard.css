@@ -5,10 +5,11 @@ padding: 20px 20px;
 margin: 50px 250px;
 border:solid#8d4343;
 }
-#addcart{
+#add{
     background-color:#8d4343 ;
-    padding: 15px;
     color: white;
+    padding: 10px!important;
+    margin: 5px!important;
 }
 .offer{
     color:white;

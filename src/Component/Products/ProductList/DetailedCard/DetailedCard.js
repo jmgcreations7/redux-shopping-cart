@@ -44,8 +44,11 @@ const DetailedCard = (props) => {
                 </h5> 
                 <h4>{Data[0].stockCount<10 && `${Data[0].stockCount} items left!!`}</h4>
                 <h4>{Data[0].stockCount == 0 && 'Out ofStock'}</h4>
+                <Link to ={`/WishList`}>
+                <button type="button" id="add">WishList</button> 
+                </Link>
                 <Link to ={`/Cart`}>
-                <button type="button" id="addcart" onClick={addCart} >Add to Cart</button> 
+                <button type="button" id="add" onClick={addCart} >Add to Cart</button> 
                 </Link>
             </div>
             <Footer/>

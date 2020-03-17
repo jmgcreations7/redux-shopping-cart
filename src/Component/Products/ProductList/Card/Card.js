@@ -28,12 +28,17 @@ function mapStateToProps(props) {
           <Fragment>
              <div className="gallery">
                  <Link to ={`/products/${props.item.name}/${props.item.id}`}>
-                      <img src={props.products[props.index].imageurl} id="listimg"/>
-                      <div className="desc"> {props.products[props.index].name}</div>
+                    <img src={props.products[props.index].imageurl} id="listimg"/>
+                    <div className="desc"> {props.products[props.index].name}</div>
                   </Link>
-                  <div className="desc"><h4>Rs.{props.products[props.index].price-((props.products[props.index].price)*(props.products[props.index].offer))/100}</h4></div>
+                  <div className="desc">
+                    <h4>Rs.{props.products[props.index].price-((props.products[props.index].price)*(props.products[props.index].offer))/100}</h4>
+                  </div>
+                  <Link to ={`/WishList`}>
+                     <button type="button" id="addcart">WishList</button>
+                  </Link>                 
                   <Link to ={`/Cart`}>
-                      <button type="button" id="addcart">Add to Cart</button> 
+                    <button type="button" id="addcart">Add to Cart</button> 
                   </Link>
               </div>
           </Fragment>
